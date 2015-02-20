@@ -1,0 +1,33 @@
+{
+    "name": "reactive-planning",
+    "version": "0.0.1",
+    "private": "true",
+    "description": "poker planning with reactive functional goodness",
+    "keywords": ["frp", "reactive", "planning", "poker"],
+    "repository": "https://github.com/Minjung/reactive-planning.git",
+    "homepage": "https://github.com/Minjung/reactive-planning",
+    "author": "Minjung",
+    "dependencies": {
+        "stylus": "*",
+        "sockjs": "*",
+        "primus": "*",
+        "mongoose": "*",
+        "mongoose-uuid": "*",
+        "express": "*",
+        "express-session": "*",
+        "cookie-parser": "*",
+        "serve-favicon": "*",
+        "serve-static": "*",
+        "jade": "*",
+        "connect-mongo": "*",
+        "baconjs": "*"
+    },
+    "main": "app.js",
+    "engines": {
+        "node": ">= 0.10"
+    },
+    "scripts": {
+        "prepublish": "npm prune",
+        "test": "make lint && make test"
+    }
+}
