@@ -1,10 +1,8 @@
 var db = {
     db: 'reactive-planning',
     host: process.env.IP || 'localhost',
-    //port: 6646,  // optional, default: 27017
-    //username: 'admin', // optional
-    //password: 'secret', // optional
-    //collection: 'sessions' // optional, default: sessions
+    no_ready_check: true,
+    ttl: 60*60
 };
 var session = {
     secret: 'secretkey',
